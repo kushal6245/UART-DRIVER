@@ -1,6 +1,6 @@
 # UART Driver
 
-A UART driver developed in Embedded C, starting from a software-level UART simulation and progressing toward implementation on real embedded hardware.
+A UART driver developed in C, starting from a software-level UART simulation and progressing toward real embedded hardware implementations.
 
 The project focuses on understanding UART communication at the bit and frame level and gradually converting that understanding into a reusable embedded driver.
 
@@ -20,9 +20,11 @@ The project focuses on understanding UART communication at the bit and frame lev
 
 UART (Universal Asynchronous Receiver/Transmitter) is one of the most commonly used serial communication interfaces in embedded systems.
 
-This project implements UART functionality from the ground up rather than relying entirely on high-level communication functions.
+This project starts with a software-level UART simulation written in standard C. The simulation models UART transmission and reception at the bit and frame level without depending on a physical UART peripheral.
 
-The simulation models:
+The project will progressively move from the software model to real microcontroller hardware.
+
+The current simulation implements:
 
 - UART frame generation
 - Bit-by-bit transmission
@@ -34,11 +36,11 @@ The simulation models:
 - Error detection and frame rejection
 - UART timing calculations
 
-The next stage of the project will move the same concepts to real UART hardware.
+The next stage will map these concepts onto real UART hardware.
 
 ---
 
-## UART Frame
+# UART Frame
 
 A UART frame consists of:
 
